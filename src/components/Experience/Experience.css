@@ -1,0 +1,13 @@
+.experience {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #faf9f8, white);
+}
+.experience-container { max-width: 800px; margin: 0 auto; }
+.exp-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.exp-card ul { margin-top: 1rem; padding-left: 1.5rem; }
+.exp-card li { margin: 0.5rem 0; color: #4a4a46; }

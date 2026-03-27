@@ -1,0 +1,30 @@
+.skills {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #faf9f8, white);
+}
+.skills-container { max-width: 1200px; margin: 0 auto; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.skill-card {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+.skill-card:hover { transform: translateY(-5px); }
+.skill-card h3 { margin: 1rem 0; }
+.progress {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress div {
+  height: 100%;
+  background: linear-gradient(90deg, #6a8c6a, #8ba888);
+  border-radius: 4px;
+}

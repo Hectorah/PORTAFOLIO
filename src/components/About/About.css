@@ -1,0 +1,37 @@
+.about {
+  padding: 5rem 2rem;
+  background: white;
+}
+.about-container { max-width: 1200px; margin: 0 auto; }
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #6a8c6a;
+  margin: 1rem auto 0;
+}
+.about-content { max-width: 800px; margin: 0 auto; text-align: center; }
+.about-content p { margin-bottom: 1.5rem; color: #4a4a46; line-height: 1.8; }
+.highlights {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.highlights div { text-align: center; }
+.number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6a8c6a;
+}
+@media (max-width: 768px) {
+  .section-title { font-size: 2rem; }
+  .highlights { gap: 1.5rem; }
+}
