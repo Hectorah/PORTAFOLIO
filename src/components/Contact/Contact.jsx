@@ -9,7 +9,7 @@ const Contact = () => {
         <h2 className="section-title">Contacto</h2>
         <div className="contact-content">
           <div className="contact-info">
-            <p><FaEnvelope /> jesus.diaz@email.com</p>
+            <p><FaEnvelope /> hectorher149@gmail.com</p>
             <p><FaMapMarkerAlt /> Venezuela</p>
             <div className="social">
               <a href="https://github.com/tuusuario"><FaGithub /></a>
@@ -23,7 +23,7 @@ const Contact = () => {
             <button type="submit">Enviar</button>
           </form>
         </div>
-        <div className="footer">© 2024 Jesús Díaz - Desarrollador Full Stack</div>
+        <div className="footer">© 2026 Hector Hernandez - Desarrollador Full Stack</div>
       </div>
     </section>
   )

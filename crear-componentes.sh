@@ -217,7 +217,7 @@ const Hero = () => {
           <div className="badge">🇻🇪 Venezuela | Programador Full Stack</div>
           <h1 className="hero-title">
             <span className="greeting">Hola, soy</span>
-            <span className="name">Jesús Díaz</span>
+            <span className="name">Hector Hernandez</span>
             <span className="role">TSU en Informática | Desarrollador Full Stack</span>
           </h1>
           <p className="hero-description">
@@ -1001,7 +1001,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="footer">© 2024 Jesús Díaz - Desarrollador Full Stack</div>
+        <div className="footer">© 2024 Hector Hernandez - Desarrollador Full Stack</div>
       </div>
     </section>
   )

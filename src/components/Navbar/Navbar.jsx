@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="logo">
           <a href="#hero" onClick={(e) => handleLinkClick(e, '#hero')}>
-            <span className="name">JD</span>
+            <span className="name">HH</span>
             <span className="title">Dev</span>
           </a>
         </div>
