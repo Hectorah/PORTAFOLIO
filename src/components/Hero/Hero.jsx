@@ -5,6 +5,17 @@ import './Hero.css'
 const Hero = () => {
   return (
     <section id="hero" className="hero">
+      <div className="hero-grid-bg" />
+      <div className="hero-code-snippets">
+        <span className="code-snippet">{'const dev = new HectorHernandez();'}</span>
+        <span className="code-snippet">{'Route::get(\'/api/projects\', [ProjectController::class, \'index\']);'}</span>
+        <span className="code-snippet">{'flutter build apk --release'}</span>
+        <span className="code-snippet">{'SELECT * FROM projects WHERE status = "active";'}</span>
+        <span className="code-snippet">{'git commit -m "feat: new feature"'}</span>
+        <span className="code-snippet">{'class AppController extends Controller {'}</span>
+        <span className="code-snippet">{'Widget build(BuildContext context) => Scaffold(...);'}</span>
+        <span className="code-snippet">{'php artisan make:model Project -mcr'}</span>
+      </div>
       <div className="hero-container">
         <div className="hero-content">
           <div className="badge">🇻🇪 Venezuela | Programador Full Stack</div>
