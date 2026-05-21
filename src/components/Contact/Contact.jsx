@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
+import TypewriterTitle from '../TypewriterTitle/TypewriterTitle'
 import { FaEnvelope, FaGithub, FaMapMarkerAlt, FaBriefcase, FaSpinner, FaCheck, FaExclamationTriangle } from 'react-icons/fa'
 import { FaWhatsapp } from 'react-icons/fa'
 import { personalInfo } from '../../data/portfolioData'
@@ -63,7 +64,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
-        <h2 className="section-title">Hablemos <span>Juntos</span></h2>
+        <TypewriterTitle title="Hablemos" highlight="Juntos" />
         <div className="contact-content">
           <div className="contact-info">
             <h3>¿Tienes un proyecto en mente?</h3>
@@ -82,7 +83,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <span className="contact-item-icon"><FaBriefcase /></span>
-                {personalInfo.company}
+                <a href={personalInfo.companyUrl} target="_blank" rel="noreferrer" class="company-link">{personalInfo.company}</a>
               </div>
             </div>
             <div className="social">

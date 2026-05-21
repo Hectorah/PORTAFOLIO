@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+﻿import React, { useState, useEffect } from 'react'
+import TypewriterTitle from '../TypewriterTitle/TypewriterTitle'
 import { FaGithub, FaExternalLinkAlt, FaLock, FaInfoCircle } from 'react-icons/fa'
 import { projectsData } from '../../data/portfolioData'
 import './Projects.css'
@@ -82,7 +83,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="projects-container">
-        <h2 className="section-title">Mis <span>Proyectos</span></h2>
+        <TypewriterTitle title="Mis" highlight="Proyectos" />
         <div className="projects-grid">
           {projectsData.map(p => (
             <div key={p.id} className="project-card">
@@ -117,7 +118,7 @@ const Projects = () => {
             <div className="modal-body">
               <p className="modal-description">{selectedProject.description}</p>
               <div className="modal-meta">
-                <p><strong>Empresa:</strong> {selectedProject.company}</p>
+                <p><strong>Empresa:</strong> <a href="https://www.klk.com.ve" target="_blank" rel="noreferrer" class="company-link">{selectedProject.company}</a></p>
                 <p><strong>Año:</strong> {selectedProject.year}</p>
               </div>
               <h4>Tecnologías</h4>

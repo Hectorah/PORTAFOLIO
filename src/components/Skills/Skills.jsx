@@ -1,4 +1,5 @@
-import React from 'react'
+﻿import React from 'react'
+import TypewriterTitle from '../TypewriterTitle/TypewriterTitle'
 import { SiPhp, SiLaravel, SiDart, SiFlutter, SiJavascript, SiGit, SiMysql, SiReact, SiNodedotjs, SiSqlite } from 'react-icons/si'
 import './Skills.css'
 
@@ -19,7 +20,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div className="skills-container">
-        <h2 className="section-title">Mis <span>Habilidades</span></h2>
+        <TypewriterTitle title="Mis" highlight="Habilidades" />
         <div className="skills-grid">
           {skills.map(skill => {
             const Icon = skill.icon

@@ -1,12 +1,13 @@
-// Datos del portafolio - Modifica estos valores para actualizar tu información
+﻿// Datos del portafolio - Modifica estos valores para actualizar tu información
 
 export const personalInfo = {
   name: 'Héctor Hernández',
   title: 'Analista de Desarrollo',
   degree: 'TSU en Informática',
   company: 'KLKSISTEMAS',
+  companyUrl: 'https://www.klk.com.ve',
   yearsExperience: 3,
-  projectsCount: 15,
+  projectsCount: 16,
   emailPersonal: 'hectorher149@gmail.com',
   emailWork: 'h.hernandez@klk.com.ve',
   whatsapp: '+584122928380',
@@ -17,7 +18,7 @@ export const personalInfo = {
 
 export const aboutData = {
   paragraphs: [
-    `Soy un desarrollador con <strong>TSU en Informática</strong> y más de ${personalInfo.yearsExperience} años de experiencia construyendo soluciones reales. Actualmente formo parte del equipo de <strong>${personalInfo.company}</strong>.`,
+    `Soy un desarrollador con <strong>TSU en Informática</strong> y más de ${personalInfo.yearsExperience} años de experiencia construyendo soluciones reales. Actualmente formo parte del equipo de <strong><a href='https://www.klk.com.ve' target='_blank' rel='noreferrer' class='company-link'>\$\{personalInfo.company\}</a></strong>.`,
     'Mi stack principal es <strong>PHP/Laravel</strong> para backend, <strong>React/Node.js</strong> para aplicaciones web modernas y <strong>Dart/Flutter</strong> para aplicaciones móviles. Me apasiona escribir código limpio y crear experiencias de usuario fluidas.',
     'Siempre en <strong>aprendizaje continuo</strong>, explorando nuevas tecnologías y compartiendo conocimiento con la comunidad.'
   ],
@@ -33,6 +34,7 @@ export const experienceData = [
     id: 1,
     position: 'Analista de Desarrollo',
     company: 'KLKSISTEMAS',
+  companyUrl: 'https://www.klk.com.ve',
     period: '2024 — Presente',
     current: true,
     description: [
@@ -48,6 +50,7 @@ export const experienceData = [
     id: 2,
     position: 'Soporte Técnico',
     company: 'KLKSISTEMAS',
+  companyUrl: 'https://www.klk.com.ve',
     period: '2022 — 2024',
     current: false,
     description: [
@@ -73,6 +76,7 @@ export const projectsData = [
     ],
     type: 'private',
     company: 'KLKSISTEMAS',
+  companyUrl: 'https://www.klk.com.ve',
     year: '2023',
     details: [
       'Dashboard consolidado con estadísticas de múltiples tiendas',
@@ -94,6 +98,7 @@ export const projectsData = [
     image: 'projects/gestor-entradas/Screenshot_1.png',
     type: 'private',
     company: 'KLKSISTEMAS',
+  companyUrl: 'https://www.klk.com.ve',
     year: '2024',
     details: [
       'App móvil con Flutter para tablets tipo kiosko',
@@ -112,6 +117,7 @@ export const projectsData = [
     image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600',
     type: 'private',
     company: 'KLKSISTEMAS',
+  companyUrl: 'https://www.klk.com.ve',
     year: '2024',
     details: [
       'Aplicación móvil con Flutter para Android/iOS',
@@ -157,6 +163,26 @@ export const projectsData = [
       'CRUD completo de tareas y proyectos',
       'Base de datos SQLite',
       'Documentación con Swagger'
+    ]
+  },
+  {
+    id: 6,
+    title: 'Integración ERP T-Virtual a KLK POS',
+    description: 'Servicio Node.js para integrar datos del ERP TVirtual con el sistema POS local. Sincronización de productos, precios, existencias y ventas con SQL Server.',
+    tags: ['Node.js', 'Express', 'SQL Server', 'API REST', 'Axios'],
+    image: 'projects/API-node/API.png',
+    type: 'private',
+    company: 'KLKSISTEMAS',
+  companyUrl: 'https://www.klk.com.ve',
+    year: '2024',
+    details: [
+      'Integración bidireccional entre ERP T-Virtual y base de datos SQL Server',
+      'Sincronización automatizada de maestros (productos, precios, almacenes)',
+      'Implementación de cola de sincronización (Sync Queue) para asegurar integridad',
+      'Manejo de idempotencia y Circuit Breaker para estabilidad ante fallos de red',
+      'Mapeo dinámico de campos usando el patrón Adapter',
+      'Logging detallado de operaciones y monitoreo de sincronización',
+      'Endpoint para sincronización manual de existencias y precios en tiempo real'
     ]
   }
 ]

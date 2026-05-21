@@ -1,0 +1,30 @@
+﻿.typewriter-title {
+  display: block !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto 3.5rem auto !important; /* Replicar margin-bottom de .section-title */
+  position: relative;
+}
+
+/* El cursor debe ser parte del flujo de texto para no romper el centrado */
+.typewriter-title .cursor {
+  display: inline-block;
+  color: var(--accent);
+  margin-left: 2px;
+  background: none;
+  -webkit-text-fill-color: var(--accent);
+  background-clip: border-box;
+}
+
+.typewriter-title .cursor.hide {
+  opacity: 0;
+}
+
+.typewriter-title .cursor.blink {
+  animation: cursorBlink 0.8s infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

@@ -1,4 +1,5 @@
-import React from 'react'
+﻿import React from 'react'
+import TypewriterTitle from '../TypewriterTitle/TypewriterTitle'
 import { aboutData } from '../../data/portfolioData'
 import './About.css'
 
@@ -6,7 +7,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        <h2 className="section-title">Sobre <span>Mí</span></h2>
+        <TypewriterTitle title="Sobre" highlight="Mí" />
         <div className="about-content">
           {aboutData.paragraphs.map((paragraph, index) => (
             <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />

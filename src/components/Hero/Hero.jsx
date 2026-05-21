@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+﻿import React, { useState, useEffect } from 'react'
 import { FaArrowDown, FaGithub } from 'react-icons/fa'
 import { personalInfo } from '../../data/portfolioData'
 import './Hero.css'
@@ -61,7 +61,7 @@ const Hero = () => {
             <span className="role">{personalInfo.degree} | {personalInfo.title}</span>
           </h1>
           <p className="hero-description">
-            Actualmente formo parte del equipo de <strong>{personalInfo.company}</strong>. Especializado en <strong>PHP, Laravel, React, Node.js, Dart y Flutter</strong>.
+            Actualmente formo parte del equipo de <strong><a href={personalInfo.companyUrl} target='_blank' rel='noreferrer' class='company-link'>{personalInfo.company}</a></strong>. Especializado en <strong>PHP, Laravel, React, Node.js, Dart y Flutter</strong>.
           </p>
           <div className="hero-cta">
             <button onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })} className="btn btn-primary">

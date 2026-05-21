@@ -79,3 +79,7 @@ section.visible {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--surface-2); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+.company-link { color: var(--accent); text-decoration: none; transition: all 0.3s; }
+.company-link:hover { color: var(--accent-2); text-shadow: 0 0 10px var(--accent-glow); }
+
