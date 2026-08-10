@@ -18,7 +18,7 @@ export const personalInfo = {
 
 export const aboutData = {
   paragraphs: [
-    `Soy un desarrollador con <strong>TSU en Informática</strong> y más de ${personalInfo.yearsExperience} años de experiencia construyendo soluciones reales. Actualmente formo parte del equipo de <strong><a href='https://www.klk.com.ve' target='_blank' rel='noreferrer' className='company-link'>\$\{personalInfo.company\}</a></strong>.`,
+    `Soy un desarrollador con <strong>TSU en Informática</strong> y más de ${personalInfo.yearsExperience} años de experiencia construyendo soluciones reales. Actualmente formo parte del equipo de <strong><a href='https://www.klk.com.ve' target='_blank' rel='noreferrer' className='company-link'>${personalInfo.company}</a></strong>.`,
     'Mi stack principal es <strong>PHP/Laravel</strong> para backend, <strong>React/Node.js</strong> para aplicaciones web modernas y <strong>Dart/Flutter</strong> para aplicaciones móviles. Me apasiona escribir código limpio y crear experiencias de usuario fluidas.',
     'Siempre en <strong>aprendizaje continuo</strong>, explorando nuevas tecnologías y compartiendo conocimiento con la comunidad.'
   ],
