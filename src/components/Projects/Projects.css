@@ -396,3 +396,16 @@
   .projects-grid { grid-template-columns: 1fr; }
   .modal-content { margin: 0.5rem; }
 }
+
+
+/* Estilos para botones de tipo demo */
+.project-btn.demo {
+  background: rgba(124, 106, 247, 0.1);
+  border-color: rgba(124, 106, 247, 0.3);
+  color: var(--accent);
+}
+
+.project-btn.demo:hover {
+  background: rgba(124, 106, 247, 0.2);
+  border-color: var(--accent);
+}

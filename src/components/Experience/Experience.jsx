@@ -17,7 +17,7 @@ const Experience = () => {
                   <h3>{exp.position}</h3>
                   <span className="exp-period">{exp.period}</span>
                 </div>
-                <p className="exp-company"><a href="https://www.klk.com.ve" target="_blank" rel="noreferrer" class="company-link">{exp.company}</a></p>
+                <p className="exp-company"><a href="https://www.klk.com.ve" target="_blank" rel="noreferrer" className="company-link">{exp.company}</a></p>
                 <ul>
                   {exp.description.map((item, idx) => (
                     <li key={idx}>{item}</li>

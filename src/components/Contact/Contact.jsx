@@ -83,7 +83,7 @@ const Contact = () => {
               </div>
               <div className="contact-item">
                 <span className="contact-item-icon"><FaBriefcase /></span>
-                <a href={personalInfo.companyUrl} target="_blank" rel="noreferrer" class="company-link">{personalInfo.company}</a>
+                <a href={personalInfo.companyUrl} target="_blank" rel="noreferrer" className="company-link">{personalInfo.company}</a>
               </div>
             </div>
             <div className="social">

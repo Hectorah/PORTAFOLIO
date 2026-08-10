@@ -118,7 +118,7 @@ const Projects = () => {
             <div className="modal-body">
               <p className="modal-description">{selectedProject.description}</p>
               <div className="modal-meta">
-                <p><strong>Empresa:</strong> <a href="https://www.klk.com.ve" target="_blank" rel="noreferrer" class="company-link">{selectedProject.company}</a></p>
+                <p><strong>Empresa:</strong> <a href="https://www.klk.com.ve" target="_blank" rel="noreferrer" className="company-link">{selectedProject.company}</a></p>
                 <p><strong>Año:</strong> {selectedProject.year}</p>
               </div>
               <h4>Tecnologías</h4>

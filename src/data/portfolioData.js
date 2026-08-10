@@ -18,7 +18,7 @@ export const personalInfo = {
 
 export const aboutData = {
   paragraphs: [
-    `Soy un desarrollador con <strong>TSU en Informática</strong> y más de ${personalInfo.yearsExperience} años de experiencia construyendo soluciones reales. Actualmente formo parte del equipo de <strong><a href='https://www.klk.com.ve' target='_blank' rel='noreferrer' class='company-link'>\$\{personalInfo.company\}</a></strong>.`,
+    `Soy un desarrollador con <strong>TSU en Informática</strong> y más de ${personalInfo.yearsExperience} años de experiencia construyendo soluciones reales. Actualmente formo parte del equipo de <strong><a href='https://www.klk.com.ve' target='_blank' rel='noreferrer' className='company-link'>\$\{personalInfo.company\}</a></strong>.`,
     'Mi stack principal es <strong>PHP/Laravel</strong> para backend, <strong>React/Node.js</strong> para aplicaciones web modernas y <strong>Dart/Flutter</strong> para aplicaciones móviles. Me apasiona escribir código limpio y crear experiencias de usuario fluidas.',
     'Siempre en <strong>aprendizaje continuo</strong>, explorando nuevas tecnologías y compartiendo conocimiento con la comunidad.'
   ],
@@ -130,21 +130,24 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: 'E-commerce Platform',
-    description: 'Tienda online completa con carrito de compras, pasarela de pagos y panel de administración.',
-    tags: ['Laravel', 'React', 'Stripe', 'SQLite', 'Tailwind'],
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600',
-    type: 'github',
-    githubUrl: 'https://github.com/Hectorah/ecommerce-demo',
-    demoUrl: null,
-    year: '2023',
+    title: 'Landing Page FEMAPuerto',
+    description: 'Reestructuración total de la landing page oficial de FEMAPuerto. Diseño moderno, responsivo y optimizado para conversión.',
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Responsive Design', 'UX/UI'],
+    image: 'projects/landing-page/femapuerto.png',
+    images: [
+      'projects/landing-page/femapuerto.png'
+    ],
+    type: 'demo',
+    demoUrl: 'https://hectorah.github.io/femapuerto_web/',
+    year: '2026',
     details: [
-      'Frontend con React y Tailwind CSS',
-      'Backend API con Laravel',
-      'Pasarela de pagos con Stripe',
-      'Base de datos SQLite para desarrollo',
-      'Panel de administración de productos',
-      'Gestión de órdenes y envíos'
+      'Reestructuración completa del diseño de la landing page',
+      'Implementación responsive con Bootstrap 5',
+      'Optimización de tiempos de carga y performance',
+      'Mejora de UX/UI para mayor conversión',
+      'Integración de efectos visuales modernos',
+      'Compatibilidad con todos los navegadores',
+      'Implementación completa con enfoque en performance'
     ]
   },
   {

@@ -2,6 +2,7 @@
 import { FaArrowDown, FaGithub } from 'react-icons/fa'
 import { personalInfo } from '../../data/portfolioData'
 import './Hero.css'
+import profileImage from '../../assets/perfil/hector_hernandez.jpeg'
 
 // Hook para efecto de máquina de escribir
 const useTypewriter = (text, speed = 100, delay = 500) => {
@@ -51,6 +52,16 @@ const Hero = () => {
       </div>
       <div className="hero-container">
         <div className="hero-content">
+          {/* Foto de perfil circular */}
+          <div className="profile-image-container">
+            <img 
+              src={profileImage} 
+              alt="Héctor Hernández" 
+              className="profile-image"
+            />
+            <div className="profile-frame"></div>
+          </div>
+          
           <div className="badge">🇻🇪 {personalInfo.location} | {personalInfo.title}</div>
           <h1 className="hero-title">
             <span className="greeting">Hola, soy</span>
@@ -61,7 +72,7 @@ const Hero = () => {
             <span className="role">{personalInfo.degree} | {personalInfo.title}</span>
           </h1>
           <p className="hero-description">
-            Actualmente formo parte del equipo de <strong><a href={personalInfo.companyUrl} target='_blank' rel='noreferrer' class='company-link'>{personalInfo.company}</a></strong>. Especializado en <strong>PHP, Laravel, React, Node.js, Dart y Flutter</strong>.
+            Actualmente formo parte del equipo de <strong><a href={personalInfo.companyUrl} target='_blank' rel='noreferrer' className='company-link'>{personalInfo.company}</a></strong>. Especializado en <strong>PHP, Laravel, React, Node.js, Dart y Flutter</strong>.
           </p>
           <div className="hero-cta">
             <button onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })} className="btn btn-primary">
